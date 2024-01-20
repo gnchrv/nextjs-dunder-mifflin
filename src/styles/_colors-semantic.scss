@@ -1,0 +1,23 @@
+@import 'colors-base';
+
+:root {
+    --color-text-primary: var(--color-base-black);
+    --color-text-secondary: var(--color-base-neutral-500);
+    --color-text-tertiary: var(--color-base-neutral-300);
+
+    --color-bg-primary: var(--color-base-white);
+    --color-bg-secondary: var(--color-base-neutral-100);
+    --color-bg-tertiary: var(--color-base-neutral-200);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-text-primary: var(--color-base-white);
+        --color-text-secondary: var(--color-base-neutral-500);
+        --color-text-tertiary: var(--color-base-neutral-700);
+
+        --color-bg-primary: var(--color-base-black);
+        --color-bg-secondary: var(--color-base-neutral-800);
+        --color-bg-tertiary: var(--color-base-neutral-700);
+    }
+}
