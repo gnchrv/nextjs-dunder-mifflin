@@ -1,13 +1,26 @@
 @import 'colors-base';
 
 :root {
+    --color-static-graphic-white: var(--color-base-white);
+}
+
+:root {
     --color-text-primary: var(--color-base-black);
     --color-text-secondary: var(--color-base-neutral-500);
     --color-text-tertiary: var(--color-base-neutral-300);
+    --color-text-accent: var(--color-base-emerald-700);
 
     --color-bg-primary: var(--color-base-white);
     --color-bg-secondary: var(--color-base-neutral-100);
     --color-bg-tertiary: var(--color-base-neutral-200);
+    --color-bg-quaternary: var(--color-base-neutral-300);
+    --color-bg-muted: var(--color-base-neutral-50);
+    
+    --color-bg-accent: var(--color-base-emerald-500);
+    --color-bg-accent-muted: var(--color-base-emerald-50);
+
+    --color-graphic-primary: var(--color-base-black);
+    --color-graphic-primary-inverted: var(--color-base-white);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,9 +28,18 @@
         --color-text-primary: var(--color-base-white);
         --color-text-secondary: var(--color-base-neutral-500);
         --color-text-tertiary: var(--color-base-neutral-700);
+        --color-text-accent: var(--color-base-emerald-300);
 
         --color-bg-primary: var(--color-base-black);
         --color-bg-secondary: var(--color-base-neutral-800);
         --color-bg-tertiary: var(--color-base-neutral-700);
+        --color-bg-quaternary: var(--color-base-neutral-600);
+        --color-bg-muted: var(--color-base-neutral-900);
+
+        --color-bg-accent: var(--color-base-emerald-500);
+        --color-bg-accent-muted: var(--color-base-emerald-900);
+
+        --color-graphic-primary: var(--color-base-white);
+        --color-graphic-primary-inverted: var(--color-base-black);
     }
 }
