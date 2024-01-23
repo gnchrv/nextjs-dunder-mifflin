@@ -1,0 +1,36 @@
+.label {
+    --knob-size: 1rem;
+    --knob-shift: .8rem;
+    --knob-radius: 9999px;
+    --container-radius: 9999px;
+
+    cursor: pointer;
+}
+
+.checkbox {
+    display: none;
+}
+
+.container {
+    width: calc(2 * var(--knob-size));
+    padding: 0.1rem;
+    border-radius: var(--container-radius);
+    background-color: var(--color-bg-quaternary);
+
+    &.checked {
+        background-color: var(--color-bg-accent);
+    }
+}
+
+.knob {
+    height: var(--knob-size);
+    width: var(--knob-size);
+    background-color: var(--color-static-graphic-white);
+    border-radius: var(--knob-radius);
+    transition: margin-left .3s ease-in-out;
+
+    &.checked {
+        margin-left: var(--knob-shift);
+        transition: margin-left .1s ease-in-out;
+    }
+}
