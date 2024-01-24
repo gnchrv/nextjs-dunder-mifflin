@@ -1,12 +1,18 @@
-import styles from './page.module.scss'
+'use client'
+
+import SwitchPlate from '@/components/SwitchPlate'
+import { useState } from 'react'
 
 export default function Home() {
+
+    // Create a state for the Switch
+    const [checked, setChecked] = useState(false)
+
     return <>
-        <h1 className={styles.title}>Bricolage Grotesque</h1>
-        <p className={styles.text}>Dear World</p>
-        <p className={styles.description}>This is me</p>
-        <div className={styles.primary}></div>
-        <div className={styles.secondary}></div>
-        <div className={styles.tertiary}></div>
+        <SwitchPlate
+            checked={checked}
+            onChange={() => { setChecked(!checked) }}
+            label='Public only'
+        />
     </>
 }
