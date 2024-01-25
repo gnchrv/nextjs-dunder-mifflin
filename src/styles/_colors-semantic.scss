@@ -15,9 +15,12 @@
     --color-bg-tertiary: var(--color-base-neutral-200);
     --color-bg-quaternary: var(--color-base-neutral-300);
     --color-bg-muted: var(--color-base-neutral-50);
-    
+
     --color-bg-accent: var(--color-base-emerald-500);
     --color-bg-accent-muted: var(--color-base-emerald-50);
+    --color-bg-accent-muted--hover: var(--color-base-emerald-100);
+
+    --color-border-accent-muted: var(--color-base-emerald-100);
 
     --color-graphic-primary: var(--color-base-black);
     --color-graphic-primary-inverted: var(--color-base-white);
@@ -38,6 +41,9 @@
 
         --color-bg-accent: var(--color-base-emerald-500);
         --color-bg-accent-muted: var(--color-base-emerald-900);
+        --color-bg-accent-muted--hover: var(--color-base-emerald-800);
+
+        --color-border-accent-muted: var(--color-base-emerald-800);
 
         --color-graphic-primary: var(--color-base-white);
         --color-graphic-primary-inverted: var(--color-base-black);
