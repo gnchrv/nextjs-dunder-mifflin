@@ -1,16 +1,18 @@
 .link {
     display: flex;
+    justify-content: center;
     align-items: center;
     border-radius: .6rem;
     background-color: var(--color-bg-accent-muted);
     height: 2.8rem;
     width: fit-content;
     padding: 0 1.2rem 0;
+    white-space: nowrap;
     text-decoration: none;
     font-family: var(--ff-accent);
     font-size: 1.2rem;
     line-height: 1;
-    font-weight: 350;
+    font-weight: 500;
     color: var(--color-text-accent);
     transition: background-color .2s ease-in-out, transform .1s ease-in-out;
     
