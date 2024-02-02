@@ -1,0 +1,42 @@
+@import '../../styles/mixins';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--color-border-secondary);
+    padding: 1.6rem 0;
+    gap: 1rem;
+
+    @include mobile-styles {
+        padding: 1.2rem 0 1.4rem;
+    }
+}
+
+.main {
+    flex-grow: 999;
+    margin-right: auto;
+}
+
+.companyName {
+    font-family: var(--ff-accent);
+    font-size: 1.8em;
+    line-height: 1.2;
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.tagline {
+    font-family: var(--ff-accent);
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 400;
+    color: var(--color-text-secondary);
+    text-wrap: balance;
+}
+
+.button {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
