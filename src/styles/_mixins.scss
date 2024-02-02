@@ -1,0 +1,6 @@
+/* A mixin that applies provided styles for mobile verions of an element */
+@mixin mobile-styles {
+    @media screen and (max-width: 450px) {
+        @content;
+    }
+}
