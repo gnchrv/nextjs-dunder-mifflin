@@ -5,6 +5,8 @@ The current CSS reset is partly based on what is explained by Andy Bell in this 
 * {
     margin: 0;
     padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* Box sizing rules */
