@@ -1,0 +1,30 @@
+@import '../../styles/mixins';
+
+.quote {
+    display: block;
+    padding: 2.4rem 0;
+    font-family: var(--ff-accent);
+    font-size: 4.2rem;
+    font-size: clamp(2.4rem, 12vw, 4.2rem);
+    line-height: 1.1;
+    font-weight: 600;
+    text-wrap: balance;
+
+    @include mobile-styles {
+        padding: 2rem 0;
+        line-height: 1.15;
+    }
+
+    & i {
+        font-style: normal;
+        color: var(--color-text-tertiary);
+    }
+}
+
+.hanging {
+    text-indent: -0.4em;
+}
+
+.hiddenQuotes {
+    quotes: none;
+}
