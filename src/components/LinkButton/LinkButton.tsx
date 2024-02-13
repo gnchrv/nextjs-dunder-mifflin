@@ -24,7 +24,7 @@ export default function LinkButton(
             role='button'
             href={href}
             onClick={onClick}
-            className={clsx(styles.link, className  )}
+            className={clsx(styles.link, className)}
         >
             {label}
         </Link>
