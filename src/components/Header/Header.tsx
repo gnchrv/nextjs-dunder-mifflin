@@ -1,3 +1,4 @@
+import Divider from '../Divider'
 import LinkButton from '../LinkButton'
 import styles from './Header.module.scss'
 
@@ -8,15 +9,18 @@ import styles from './Header.module.scss'
 export default function Header() {
     return (
         <header className={styles.header}>
-            <section className={styles.main}>
-                <h3 className={styles.companyName}>Dunder Mifflin</h3>
-                <p className={styles.tagline}>Limitless Paper in a Paperless World</p>
+            <section className={styles.content}>
+                <section className={styles.main}>
+                    <h3 className={styles.companyName}>Dunder Mifflin</h3>
+                    <p className={styles.tagline}>Limitless Paper in a Paperless World</p>
+                </section>
+                <LinkButton
+                    className={styles.button}
+                    label='Sign In'
+                    href='/signin'
+                />
             </section>
-            <LinkButton
-                className={styles.button}
-                label='Sign In'
-                href='/signin'
-            />
+            <Divider style='secondary' />
         </header>
     )
 }
