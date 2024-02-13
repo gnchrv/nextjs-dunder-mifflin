@@ -1,28 +1,20 @@
-'use client'
-
 import styles from './page.module.scss'
-import { useState } from 'react'
-import LinkButton from '@/components/LinkButton'
-import SwitchPlate from '@/components/SwitchPlate'
 import Header from '@/components/Header'
+import Quote from '@/components/Quote'
+import Divider from '@/components/Divider'
 
 export default function Home() {
-
-    // Create a state for the Switch
-    const [checked, setChecked] = useState(false)
 
     return <>
         <section className={styles.container}>
             <Header />
-            <LinkButton
-                label='Sign In'
-                href='/'
-            ></LinkButton>
-            <SwitchPlate
-                checked={checked}
-                onChange={() => { setChecked(!checked) }}
-                label='Public only'
-            />
+            <Quote
+                hangingPunctuation={true}
+                hideQuotes={true}
+            >
+                <i>„</i>You miss 100% of the shots you don’t <span style={{ whiteSpace: 'nowrap' }}>take—</span>Wayne Gretzky<i><span style={{ whiteSpace: 'nowrap' }}>“—</span>Michael Scott</i>
+            </Quote>
+            <Divider style='secondary' />
         </section>
     </>
 }
